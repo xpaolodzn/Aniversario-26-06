@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>🌷 Feliz Aniversario 🌷</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: white;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    /* 🌌 Estrellas parpadeantes */
+    .star {
+      position: fixed;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite alternate;
+    }
+    @keyframes twinkle {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
+    }
+
+    /* ❤️ Corazones flotando */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      color: rgba(255, 105, 180, 0.7);
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+
+    /* 💫 Texto neón */
+    h1 {
+      font-size: 2.8em;
+      margin: 20px 10px;
+      background: linear-gradient(90deg, #ff6fa9, #ff85b7, #ffd1dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: neon 5s ease infinite;
+    }
+    @keyframes neon {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 🌷 Tulipanes */
+    .tulips {
+      width: 100px;
+      margin: 15px;
+      animation: floatTulip 4s ease-in-out infinite;
+    }
+    @keyframes floatTulip {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* 📸 Carrusel */
+    .carousel {
+      position: relative;
+      max-width: 400px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+    .carousel img.active {
+      display: block;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 🎶 Canciones */
+    .music {
+      margin: 25px auto;
+      max-width: 400px;
+    }
+    .wave {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .bar {
+      width: 4px;
+      height: 20px;
+      margin: 0 2px;
+      background: #ff69b4;
+      animation: sound 0.5s infinite;
+    }
+    @keyframes sound {
+      0% { height: 10px; }
+      50% { height: 30px; }
+      100% { height: 10px; }
+    }
+
+    /* Botón */
+    .btn {
+      background: #ff69b4;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.1em;
+      border-radius: 12px;
+      cursor: pointer;
+      color: #fff;
+      margin: 20px;
+      box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff4081;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff69b4, 0 0 40px #ff1493;
+    }
+
+    /* Notita */
+    .note {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff0f5;
+      border: 2px solid #ff69b4;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      color: #d6336c;
+      line-height: 1.6em;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: none;
+      animation: fadeIn 1s ease;
+      white-space: pre-line;
+    }
+
+    /* Mensaje sorpresa */
+    .surprise {
+      font-size: 1.5em;
+      color: #ffb6c1;
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 2s ease;
+    }
+  </style>
+</head>
+<body>
+<!-- 🌷 Encabezado con tulipanes -->
+<div>
+
+<h1>🌷 Feliz Aniversario, Mi Amor 🌷</h1>
+
+</div>
+<!-- 📸 Carrusel -->
+<div class="carousel">
+<img class="active" onerror="this.onerror=null;this.src='https://i.postimg.cc/3x3QzSGq/heart.png';" src="https://i.postimg.cc/nr7cyPD6/IMG-20241016-WA0045-1.jpg"/>
+<img onerror="this.onerror=null;this.src='https://i.postimg.cc/3x3QzSGq/heart.png';" src="https://i.postimg.cc/V62kH8dq/IMG-20250715-WA0074.jpg"/>
+<img onerror="this.onerror=null;this.src='https://i.postimg.cc/3x3QzSGq/heart.png';" src="https://i.postimg.cc/fTnbcM4Z/IMG-20250725-WA0005.jpg"/>
+<img onerror="this.onerror=null;this.src='https://i.postimg.cc/3x3QzSGq/heart.png';" src="https://i.postimg.cc/DfbZ48MB/IMG-20250729-WA0034.jpg"/>
+<img onerror="this.onerror=null;this.src='https://i.postimg.cc/3x3QzSGq/heart.png';" src="https://i.postimg.cc/9FdQ1sV9/IMG-20250716-215417-290.jpg"/>
+</div>
+<!-- 🎶 Música -->
+<div class="music">
+<div class="wave">
+<div class="bar"></div><div class="bar"></div><div class="bar"></div>
+<div class="bar"></div><div class="bar"></div>
+</div>
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" frameborder="0" height="152" loading="lazy" src="https://open.spotify.com/embed/track/08K2f894fe9zB5Ohd6H1C6?utm_source=generator" style="border-radius:12px" width="100%"></iframe>
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" frameborder="0" height="152" loading="lazy" src="https://open.spotify.com/embed/track/2kVtMvrlcK5SRxZvdHgTzn?utm_source=generator" style="border-radius:12px" width="100%"></iframe>
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" frameborder="0" height="152" loading="lazy" src="https://open.spotify.com/embed/track/7b9hpzFQJaKUAAKsOeDafS?utm_source=generator" style="border-radius:12px" width="100%"></iframe>
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" frameborder="0" height="152" loading="lazy" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" style="border-radius:12px" width="100%"></iframe>
+</div>
+<!-- 💌 Botón + Notita -->
+<button class="btn" onclick="mostrarNota()">💌 Toca aquí mi amor 💌</button>
+<div class="note" id="nota">
+    Te amo mariangelita hermosa de aquí hasta la última galaxia de la última constelación en todos los universos.  
+    Doy gracias al destino por tenerte aquí a mi lado y por los días que vivo junto a ti mi vida, eres lo mejor que la vida me dio y no quiero alejarme de ti nunca.  
+    Somos el mejor equipito que Dios pudo unir y quiero que esta unión sea por siempre y para siempre mi amorcito.  
+    Te amo MUUUUAK 💕
+  </div>
+<!-- Mensaje sorpresa -->
+<div class="surprise" id="sorpresa">✨ Te Amo Para Siempre ✨</div>
+<script>
+    /* Estrellas */
+    for (let i=0; i<60; i++) {
+      let star = document.createElement("div");
+      star.classList.add("star");
+      star.style.left = Math.random()*100 + "vw";
+      star.style.top = Math.random()*100 + "vh";
+      star.style.animationDuration = (2 + Math.random()*3) + "s";
+      document.body.appendChild(star);
+    }
+
+    /* Corazones */
+    function crearCorazon() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random()*100 + "vw";
+      heart.style.fontSize = (20 + Math.random()*20) + "px";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(crearCorazon, 800);
+
+    /* Carrusel */
+    let index = 0;
+    const images = document.querySelectorAll(".carousel img");
+    setInterval(() => {
+      images[index].classList.remove("active");
+      index = (index+1) % images.length;
+      images[index].classList.add("active");
+    }, 4000);
+
+    /* Mostrar notita */
+    function mostrarNota() {
+      document.getElementById("nota").style.display = "block";
+    }
+
+    /* Mensaje sorpresa */
+    setTimeout(() => {
+      document.getElementById("sorpresa").style.display = "block";
+    }, 10000); // aparece después de 10s
+  </script>
+</body>
+</html>
